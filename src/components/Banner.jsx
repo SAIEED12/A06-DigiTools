@@ -92,7 +92,7 @@ const Banner = () => {
             <button className="btn rounded-full border-none bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white hover:opacity-90">
               Explore Products
             </button>
-            <button className="group btn rounded-full border border-purple-500 bg-white hover:bg-purple-600 transition-all">
+            <button className="group btn rounded-full border border-purple-500 bg-white hover:bg-purple-700/75 transition-all">
               <span
                 className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] bg-clip-text text-transparent font-bold 
     group-hover:bg-none group-hover:text-white flex gap-2"
