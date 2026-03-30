@@ -2,8 +2,8 @@ import React from "react";
 
 const Card = ({ card }) => {
   return (
-    <div className="container mx-auto">
-      <div className="card bg-base-100 w-96 shadow-sm mb-20">
+    <div className="w-full px-8">
+      <div className="card bg-base-100 w-full shadow-sm mb-20">
         <div className="flex justify-end">
           <span className="badge badge-md rounded-full text-[#BB4D00] bg-amber-100 p-4 mt-2 font-semibold">
             {card.tag}

@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner.png";
 const Banner = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row container mx-auto items-center gap-10 md:flex-col-reverse md:gap-20 mt-10 md:mt-20 px-4">
+      <div className="flex flex-col md:flex-row container mx-auto items-center gap-10 md:gap-20 mt-10 md:mt-20 px-4">
         <div className="left">
           <div className="bg-[#E1E7FF] rounded-full p-2 w-80 flex justify-center mb-4">
             <p className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] bg-clip-text text-transparent flex items-center gap-1">
@@ -132,7 +132,7 @@ const Banner = () => {
         </div>
       </div>
 
-<div className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] mt-20 mb-20 flex flex-col md:flex-row justify-center items-center gap-0 px-6 py-4 md:py-0 md:gap-30">
+<div className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] mt-20 mb-20 flex flex-col md:flex-row justify-center items-center gap-0 px-6 py-4 md:py-0 md:gap-10 lg:gap-20">
   
   <div className="p-8 space-y-4 text-center md:text-left">
     <h2 className="text-white font-extrabold text-5xl">50K+</h2>

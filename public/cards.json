@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Resume Builder Pro",
     "description": "Create professional resumes easily\nOptimized for ATS systems",
-    "price": 0,
+    "price": 40,
     "period": "one-time",
     "tag": "popular",
     "features": [
@@ -45,7 +45,7 @@
     "id": 4,
     "name": "Interview Prep Toolkit",
     "description": "Prepare for interviews effectively. Practice real-world questions",
-    "price": 8,
+    "price": 29,
     "period": "monthly",
     "tag": "popular",
     "features": [
@@ -59,7 +59,7 @@
     "id": 5,
     "name": "Job Tracker",
     "description": "Track all your job applications. Stay organized and efficient",
-    "price": 0,
+    "price": 20,
     "period": "one-time",
     "tag": "new",
     "features": [
@@ -73,7 +73,7 @@
     "id": 6,
     "name": "LinkedIn Optimizer",
     "description": "Enhance your LinkedIn profile\nIncrease visibility to recruiters",
-    "price": 10,
+    "price": 19,
     "period": "monthly",
     "tag": "best seller",
     "features": [
