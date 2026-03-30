@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl bg-linear-to-r from-[#4800f1] to-[#8b02f3] bg-clip-text text-transparent font-bold">
+          <a className="cursor-pointer text-3xl bg-linear-to-r from-[#4800f1] to-[#8b02f3] bg-clip-text text-transparent font-bold">
             DigiTools
           </a>
         </div>
