@@ -4,6 +4,14 @@ import Banner from './components/Banner'
 import Cards from './components/Cards'
 import Navbar from './components/Navbar'
 
+const getCards = async ()=> {
+  const res = await fetch("/cards.json")
+  return res.json()
+  
+}
+
+const cardsPromise = getCards();
+
 function App() {
   const [activeTab, setActiveTab] = useState("Products")
 
@@ -11,9 +19,17 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <Cards></Cards>
+      <div className="container mx-auto text-center">
+        <h2 className="font-bold text-5xl mb-4">Premium Digital Tools</h2>
+        <p className="text-[#627382] mb-4">
+          Choose from our curated collection of premium digital products
+          designed <br /> to boost your productivity and creativity.
+        </p>
+        
+      </div>
 
-        <div className="tabs tabs-box justify-center bg-transparent mt-10 mb-10">
+
+        <div className="tabs tabs-box justify-center bg-transparent mt-10 ">
         <input
           type="radio"
           name="my_tabs_1"
@@ -30,6 +46,8 @@ function App() {
           onClick={() => setActiveTab("Cart")}
         />
       </div>
+
+      <Cards cardsPromise={cardsPromise}></Cards>
     </>
   )
 }

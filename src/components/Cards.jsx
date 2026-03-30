@@ -1,14 +1,18 @@
-import React from 'react';
-
-const Cards = () => {
-    return (
-        <div>
-            <div className='container mx-auto text-center'>
-                <h2 className='font-bold text-5xl mb-4'>Premium Digital Tools</h2>
-                <p className='text-[#627382] mb-4'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
-            </div>
+import React, { use } from "react";
+import Card from "./Card";
+const Cards = ({cardsPromise}) => {
+    const cards = use(cardsPromise)
+  return (
+    <div className="container mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
+            {
+                cards.map((card) =>(
+                    <Card key={card.id} card={card}></Card>
+                ))
+            }
         </div>
-    );
+    </div>
+  );
 };
 
 export default Cards;

@@ -1,0 +1,58 @@
+import React from "react";
+
+const Card = ({ card }) => {
+  return (
+    <div className="container mx-auto">
+      <div className="card bg-base-100 w-96 shadow-sm mb-20">
+        <div className="flex justify-end">
+          <span className="badge badge-md rounded-full text-[#BB4D00] bg-amber-100 p-4 mt-2 font-semibold">
+            {card.tag}
+          </span>
+        </div>
+        <figure className="flex justify-start px-8 pt-4 ">
+          <img src={card.icon} alt="Shoes" className="object-contain" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{card.name}</h2>
+          <p className="mb-4 text-[#627382]">{card.description}</p>
+          <p className="font-bold text-2xl">
+            ${card.price}
+            <span className="text-[16px] font-light text-[#627382]">
+              /{card.period}
+            </span>
+          </p>
+
+          <div>
+            <ul className="text-[#627382] mb-4">
+              {card.features.map((feature, index) => (
+                <li key={index} className="flex gap-1">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.1633 6.28827L8.16331 16.2883C8.07621 16.3757 7.97272 16.445 7.85876 16.4923C7.74481 16.5397 7.62263 16.564 7.49925 16.564C7.37586 16.564 7.25368 16.5397 7.13973 16.4923C7.02577 16.445 6.92228 16.3757 6.83518 16.2883L2.46018 11.9133C2.37298 11.8261 2.3038 11.7225 2.25661 11.6086C2.20941 11.4947 2.18512 11.3725 2.18512 11.2492C2.18512 11.1259 2.20941 11.0038 2.25661 10.8898C2.3038 10.7759 2.37298 10.6724 2.46018 10.5851C2.54739 10.4979 2.65092 10.4288 2.76486 10.3816C2.8788 10.3344 3.00092 10.3101 3.12425 10.3101C3.24757 10.3101 3.36969 10.3344 3.48363 10.3816C3.59757 10.4288 3.7011 10.4979 3.78831 10.5851L7.50003 14.2969L16.8367 4.96171C17.0129 4.78559 17.2517 4.68665 17.5008 4.68665C17.7499 4.68665 17.9887 4.78559 18.1649 4.96171C18.341 5.13783 18.4399 5.3767 18.4399 5.62577C18.4399 5.87484 18.341 6.11371 18.1649 6.28983L18.1633 6.28827Z"
+                      fill="#30B868"
+                    />
+                  </svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="card-actions justify-end">
+            <button className="btn btn-ghost font-semibold bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white w-full rounded-full">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
