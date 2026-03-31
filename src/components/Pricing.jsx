@@ -11,13 +11,15 @@ const Pricing = () => {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 px-8 container mx-auto mb-20">
 
-        <div className="card w-full md:w-96 bg-base-100 shadow-sm rounded-2xl">
-          <div className="card-body">
-            <div className="flex justify-between">
-              <h2 className="text-3xl font-bold">Premium</h2>
-              <span className="text-xl">$29/mo</span>
+        <div className="card w-full md:w-96 bg-base-100 shadow-sm rounded-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
+          <div className="card-body ">
+            <div>
+              <h2 className="text-3xl font-bold mb-2">Starter</h2>
+                <p className="text-[#627382] opacity-80 mb-8">Perfect for getting started</p>
+                <p className="text-4xl font-bold text-black mb-4">$0<span className="text-sm font-normal text-[#627382]">/Month</span></p>
             </div>
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
+
+            <ul className="mt-1 flex flex-col gap-2 text-md">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,24 +35,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>High-resolution image generation</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Customizable style templates</span>
+                <span>Access to 10 free toolsn</span>
               </li>
               <li>
                 <svg
@@ -67,7 +52,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Batch processing capabilities</span>
+                <span>Basic templates</span>
               </li>
               <li>
                 <svg
@@ -84,12 +69,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>AI-driven image enhancements</span>
+                <span>Community supports</span>
               </li>
-              <li className="opacity-50">
+              <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-base-content/50"
+                  className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -101,35 +86,17 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="line-through">Seamless cloud integration</span>
+                <span>1 project per month</span>
               </li>
-              <li className="opacity-50">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-base-content/50"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span className="line-through">
-                  Real-time collaboration tools
-                </span>
-              </li>
+
             </ul>
-            <div className="mt-6">
+            <div className="mt-auto">
               <button className="btn rounded-full border-none bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white hover:opacity-90 btn-block">Get Started Free</button>
             </div>
           </div>
         </div>
 
-        <div className="card w-full md:w-96 bg-base-100 shadow-sm bg-linear-to-r from-[#6223f3] to-[#A020F0] rounded-2xl">
+        <div className="card w-full md:w-96 bg-base-100 shadow-sm bg-linear-to-r from-[#6223f3] to-[#A020F0] rounded-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
              <div className="relative flex justify-center">
                 <span className="absolute -top-3 badge rounded-full  text-[#BB4D00] bg-amber-100 p-2 font-medium">Most Popular</span>
              </div>
@@ -140,7 +107,7 @@ const Pricing = () => {
             </div>
             <p className="text-white opacity-80">Best for professionals</p>
             <p className="text-4xl font-bold text-white mt-4">$29<span className="text-sm font-normal">/Month</span></p>
-            <ul className="mt-6 flex flex-col gap-2 text-xs text-white">
+            <ul className="mt-6 flex flex-col gap-2 text-md text-white">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -245,18 +212,19 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn bg-white rounded-full btn-block">Start Pro Trial</button>
+              <button className="btn bg-white rounded-full btn-block hover:bg-base-300">Start Pro Trial</button>
             </div>
           </div>
         </div>
 
-        <div className="card w-full md:w-96 bg-base-100 shadow-sm rounded-2xl">
+        <div className="card w-full md:w-96 bg-base-100 shadow-sm rounded-2xl hover:scale-105 transition-transform duration-300 cursor-pointer">
           <div className="card-body">
-            <div className="flex justify-between">
-              <h2 className="text-3xl font-bold">Premium</h2>
-              <span className="text-xl">$29/mo</span>
+            <div>
+              <h2 className="text-3xl font-bold">Enterprise</h2>
+              <p className="text-[#627382] opacity-80 mb-8">For teams and businesses</p>
+              <p className="text-4xl font-bold text-black mb-4">$99<span className="text-sm font-normal text-[#627382]">/Month</span></p>
             </div>
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
+            <ul className="mt-6 flex flex-col gap-2 text-md">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -272,24 +240,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>High-resolution image generation</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Customizable style templates</span>
+                <span>Everything in Pro</span>
               </li>
               <li>
                 <svg
@@ -306,7 +257,7 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>Batch processing capabilities</span>
+                <span>Team collaboration</span>
               </li>
               <li>
                 <svg
@@ -323,12 +274,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span>AI-driven image enhancements</span>
+                <span>Custom integrations</span>
               </li>
-              <li className="opacity-50">
+              <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-base-content/50"
+                  className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -340,12 +291,12 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="line-through">Seamless cloud integration</span>
+                <span>SLA guarantee</span>
               </li>
-              <li className="opacity-50">
+              <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-base-content/50"
+                  className="size-4 me-2 inline-block text-success"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -357,10 +308,26 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="line-through">
-                  Real-time collaboration tools
-                </span>
+                <span>Custom branding</span>
               </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Dedicated support</span>
+              </li>
+
             </ul>
             <div className="mt-6">
               <button className="btn rounded-full border-none bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white hover:opacity-90 btn-block">Contact Sales</button>

@@ -18,8 +18,8 @@ const Card = ({ card, cart, setCart }) => {
   };
 
   return (
-    <div className="w-full px-8">
-      <div className="card bg-base-100 w-full shadow-sm mb-20">
+    <div className="w-full px-8 mt-auto">
+      <div className="card bg-base-100 w-full shadow-sm mb-20 hover:scale-105 transition-transform duration-300 hover:bg-base-200 cursor-pointer">
         <div className="flex justify-end">
           <span
             className={`badge badge-md rounded-full p-4 mt-2 font-semibold ${
@@ -71,7 +71,7 @@ const Card = ({ card, cart, setCart }) => {
           <div className="card-actions justify-end">
             <button
               onClick={handleBuy}
-              className={`btn btn-ghost font-semibold  text-white w-full rounded-full ${isBought ? "bg-green-500" : 
+              className={`btn btn-ghost font-semibold text-white w-full rounded-full ${isBought ? "bg-green-500" : 
                 "bg-linear-to-r from-[#6223f3] to-[#A020F0]"}`}
             >
               {isBought ? "✔ Added to Cart!" : "Buy Now"}
