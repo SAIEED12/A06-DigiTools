@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <Banner></Banner>
       <div className="container mx-auto text-center">
         <h2 className="font-bold text-5xl mb-4">Premium Digital Tools</h2>

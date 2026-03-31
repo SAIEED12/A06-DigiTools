@@ -1,14 +1,18 @@
 import React from "react";
 import emptyCartImg from "../assets/products/cart-shopping-cart.png";
+import { toast } from "react-toastify";
 const Cart = ({ cart, setCart }) => {
   const totalPrice = cart.reduce((sum, products) => sum + products.price, 0);
   const handlePayment = () => {
     setCart([]);
+    toast.success("Payment Successfull!")
+
   };
 
   const handleDelte = (products) => {
     const filteredArray = cart.filter(product => product.id !== products.id)
     setCart(filteredArray)
+    toast.success("Item Removed Successfully!")
   }
 
   return (

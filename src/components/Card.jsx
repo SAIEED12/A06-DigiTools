@@ -1,11 +1,20 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Card = ({ card, cart, setCart }) => {
   const [isBought, setIsBought] = useState(false);
 
   const handleBuy = () => {
     setIsBought(true);
+
+    const isFound = cart.find(products => products.id === card.id)
+    if(isFound){
+      toast.error("Item Alreday in the cart!")
+      return
+    }
+
     setCart([...cart, card])
+    toast.success("Item Added to Cart!")
   };
 
   return (
