@@ -44,7 +44,7 @@ function App() {
           type="radio"
           name="my_tabs_1"
           className={`tab rounded-full w-30 font-semibold ${activeTab === "Cart" ? "btn rounded-full border-none bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white" : ""}`}
-          aria-label={`Cart()`}
+          aria-label={`Cart(${cart.length})`}
           onClick={() => setActiveTab("Cart")}
         />
       </div>
