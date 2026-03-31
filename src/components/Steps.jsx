@@ -5,7 +5,7 @@ import rocketImg from "../assets//rocket.png";
 const Steps = () => {
   return (
     <div className="bg-base-200 p-14 mt-30 mb-30">
-      <div className="container mx-auto text-center  mb-4">
+      <div className="container mx-auto text-center mb-4">
         <h2 className="text-5xl font-bold mb-4">Get Started in 3 Steps</h2>
         <p className="text-[#627382]">
           Start using premium digital tools in minutes, not hours.
@@ -14,7 +14,7 @@ const Steps = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 px-8 container mx-auto">
         <div className="card bg-base-100 w-full shadow-sm">
           <div className="relative">
-            <span className="absolute top-4 right-4 bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
+            <span className="absolute top-4 right-4 bg-linear-to-rfrom-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
               01
             </span>
           </div>
@@ -35,7 +35,7 @@ const Steps = () => {
         </div>
         <div className="card bg-base-100 w-full shadow-sm">
           <div className="relative">
-            <span className="absolute top-4 right-4 bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
+            <span className="absolute top-4 right-4 bg-linear-to-rfrom-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
               02
             </span>
           </div>
@@ -53,7 +53,7 @@ const Steps = () => {
         </div>
         <div className="card bg-base-100 w-full shadow-sm ">
           <div className="relative">
-            <span className="absolute top-4 right-4 bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
+            <span className="absolute top-4 right-4 bg-linear-to-rfrom-[#6223f3] to-[#A020F0] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center p-4">
               03
             </span>
           </div>

@@ -5,6 +5,7 @@ import Cards from './components/Cards'
 import Navbar from './components/Navbar'
 import Cart from './components/Cart'
 import Steps from './components/Steps'
+import Pricing from './components/Pricing'
 
 const getCards = async ()=> {
   const res = await fetch("/cards.json")
@@ -54,6 +55,7 @@ function App() {
       {activeTab === "Cart" && <Cart cart={cart} setCart={setCart}></Cart>}
 
       <Steps></Steps>
+      <Pricing></Pricing>
     </>
   )
 }
