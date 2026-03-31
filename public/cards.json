@@ -47,7 +47,7 @@
     "description": "Prepare for interviews effectively. Practice real-world questions",
     "price": 29,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "new",
     "features": [
       "Mock interviews",
       "Common Q&A database",
@@ -75,7 +75,7 @@
     "description": "Enhance your LinkedIn profile\nIncrease visibility to recruiters",
     "price": 19,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "popular",
     "features": [
       "Profile analysis",
       "Keyword suggestions",
@@ -89,7 +89,7 @@
     "description": "Test your technical skills. Get detailed performance reports",
     "price": 15,
     "period": "yearly",
-    "tag": "popular",
+    "tag": "best seller",
     "features": [
       "Multiple skill categories",
       "Timed tests",

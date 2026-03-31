@@ -5,9 +5,14 @@ const Card = ({ card }) => {
     <div className="w-full px-8">
       <div className="card bg-base-100 w-full shadow-sm mb-20">
         <div className="flex justify-end">
-          <span className="badge badge-md rounded-full text-[#BB4D00] bg-amber-100 p-4 mt-2 font-semibold">
-            {card.tag}
-          </span>
+<span
+  className={`badge badge-md rounded-full p-4 mt-2 font-semibold ${
+    card.tag === "popular"
+      ? "text-purple-700 bg-purple-100"
+      : card.tag === "new"
+      ? "text-green-700 bg-green-100"
+      : "text-[#BB4D00] bg-amber-100"
+      }`}>{card.tag}</span>
         </div>
         <figure className="flex justify-start px-8 pt-4 ">
           <img src={card.icon} alt="Shoes" className="object-contain" />
