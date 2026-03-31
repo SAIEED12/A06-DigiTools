@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Card = ({ card }) => {
+const Card = ({ card, cart, setCart }) => {
+  const [isBought, setIsBought] = useState(false);
+
+  const handleBuy = () => {
+    setIsBought(true);
+    setCart([...cart, card])
+  };
+
   return (
     <div className="w-full px-8">
       <div className="card bg-base-100 w-full shadow-sm mb-20">
         <div className="flex justify-end">
-<span
-  className={`badge badge-md rounded-full p-4 mt-2 font-semibold ${
-    card.tag === "popular"
-      ? "text-purple-700 bg-purple-100"
-      : card.tag === "new"
-      ? "text-green-700 bg-green-100"
-      : "text-[#BB4D00] bg-amber-100"
-      }`}>{card.tag}</span>
+          <span
+            className={`badge badge-md rounded-full p-4 mt-2 font-semibold ${
+              card.tag === "popular"
+                ? "text-purple-700 bg-purple-100"
+                : card.tag === "new"
+                  ? "text-green-700 bg-green-100"
+                  : "text-[#BB4D00] bg-amber-100"
+            }`}
+          >
+            {card.tag}
+          </span>
         </div>
         <figure className="flex justify-start px-8 pt-4 ">
           <img src={card.icon} alt="Shoes" className="object-contain" />
@@ -50,8 +60,12 @@ const Card = ({ card }) => {
           </div>
 
           <div className="card-actions justify-end">
-            <button className="btn btn-ghost font-semibold bg-linear-to-r from-[#6223f3] to-[#A020F0] text-white w-full rounded-full">
-              Buy Now
+            <button
+              onClick={handleBuy}
+              className={`btn btn-ghost font-semibold  text-white w-full rounded-full ${isBought ? "bg-green-500" : 
+                "bg-linear-to-r from-[#6223f3] to-[#A020F0]"}`}
+            >
+              {isBought ? "✔ Added to Cart!" : "Buy Now"}
             </button>
           </div>
         </div>

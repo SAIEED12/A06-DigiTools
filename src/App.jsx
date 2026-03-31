@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './components/Banner'
 import Cards from './components/Cards'
 import Navbar from './components/Navbar'
+import Cart from './components/Cart'
 
 const getCards = async ()=> {
   const res = await fetch("/cards.json")
@@ -14,6 +15,7 @@ const cardsPromise = getCards();
 
 function App() {
   const [activeTab, setActiveTab] = useState("Products")
+  const [cart, setCart] = useState([])
 
   return (
     <>
@@ -47,7 +49,8 @@ function App() {
         />
       </div>
 
-      <Cards cardsPromise={cardsPromise}></Cards>
+      {activeTab === "Products" && <Cards cardsPromise={cardsPromise} cart={cart} setCart={setCart}></Cards>}
+      {activeTab === "Cart" && <Cart cart={cart} setCart={setCart}></Cart>}
     </>
   )
 }
