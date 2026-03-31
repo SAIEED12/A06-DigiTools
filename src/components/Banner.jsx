@@ -134,7 +134,7 @@ const Banner = () => {
 
 <div className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] mt-20 mb-20 flex flex-col md:flex-row justify-center items-center gap-0 px-6 py-4 md:py-0 md:gap-10 lg:gap-20">
   
-  <div className="p-8 space-y-4 text-center md:text-left">
+  <div className="p-15 space-y-4 text-center md:text-left">
     <h2 className="text-white font-extrabold text-5xl">50K+</h2>
     <p className="text-white/80 text-xl">Active Users</p>
   </div>

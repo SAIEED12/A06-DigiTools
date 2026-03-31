@@ -6,6 +6,8 @@ import Navbar from './components/Navbar'
 import Cart from './components/Cart'
 import Steps from './components/Steps'
 import Pricing from './components/Pricing'
+import Explore from './components/Explore'
+import Footer from './components/Footer'
 
 const getCards = async ()=> {
   const res = await fetch("/cards.json")
@@ -56,6 +58,8 @@ function App() {
 
       <Steps></Steps>
       <Pricing></Pricing>
+      <Explore></Explore>
+      <Footer></Footer>
     </>
   )
 }
