@@ -11,7 +11,7 @@
       "ATS optimization",
       "Export to PDF"
     ],
-    "icon": "../src/assets/products/design-tool.png"
+    "icon": "/products/design-tool.png"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
       "Custom job targeting",
       "Download in PDF"
     ],
-    "icon": "../src/assets/products/operation.png"
+    "icon": "/products/operation.png"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
       "Custom domain support",
       "SEO optimization"
     ],
-    "icon": "../src/assets/products/portfolio.png"
+    "icon": "/products/portfolio.png"
   },
   {
     "id": 4,
@@ -67,7 +67,7 @@
       "Reminders",
       "Notes & attachments"
     ],
-    "icon": "../src/assets/products/icons8-briefcase-48.png"
+    "icon": "/products/icons8-briefcase-48.png"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
       "Keyword suggestions",
       "Headline generator"
     ],
-    "icon": "../src/assets/products/social-media.png"
+    "icon": "/products/social-media.png"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
       "Timed tests",
       "Detailed analytics"
     ],
-    "icon": "../src/assets/products/icons8-idea-48.png"
+    "icon": "/products/icons8-idea-48.png"
   },
   {
     "id": 8,
@@ -109,6 +109,6 @@
       "Client communication guides",
       "Pricing strategies"
     ],
-    "icon": "../src/assets/products/camera_8775444 1.png"
+    "icon": "/products/camera_8775444 1.png"
   }
 ]
