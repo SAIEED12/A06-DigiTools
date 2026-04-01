@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner.png";
 const Banner = () => {
   return (
     <div>
-      <div className="flex flex-col md:flex-row container mx-auto items-center gap-10 md:gap-20 mt-10 md:mt-20 px-4">
+      <div className="flex flex-col md:flex-row container mx-auto items-center gap-10 md:gap-20 mt-5 px-4 min-h-screen">
         <div className="left">
           <div className="bg-[#E1E7FF] rounded-full p-2 w-80 flex justify-center mb-4">
             <p className="bg-linear-to-r from-[#4800f1] to-[#8b02f3] bg-clip-text text-transparent flex items-center gap-1">

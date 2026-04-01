@@ -17,8 +17,8 @@ This project is built using modern web technologies to ensure performance and sc
 
 * **Frontend:** React.js / Tailwind CSS / DaisyUI
 * **Icons:** React Icons / Lucide React
-* **State Management:** Context API / Redux Toolkit
-* **Deployment:** Vercel / Netlify
+* **State Management:** Context API 
+* **Deployment:** Netlify
 
 ## ✨ Key Features
 
