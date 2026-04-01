@@ -53,7 +53,7 @@
       "Common Q&A database",
       "Performance tracking"
     ],
-    "icon": "../src/assets/products/writing_2327400 1.png"
+    "icon": "/products/writing_2327400 1.png"
   },
   {
     "id": 5,
@@ -100,7 +100,7 @@
   {
     "id": 8,
     "name": "Freelancer Starter Pack",
-    "description": "Kickstart your freelancing journey\nTools and guides included",
+    "description": "Kickstart your freelancing journey. Tools and guides included",
     "price": 20,
     "period": "one-time",
     "tag": "new",
